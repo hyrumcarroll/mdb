@@ -1,0 +1,4 @@
+MultiDomainBenchmark-test,TAP-1,,,,,,TAP-3,,,,,,TAP-5,,,,,,TAP-20,,,,,
+Iteration,1,2,3,4,5,,1,2,3,4,5,,1,2,3,4,5,,1,2,3,4,5,
+psiblast,,,,,,,,,,,,,,,,,,,,,,,,
+psisemiglobal-iterative-global_pssm-targetBlockLen30,,,,,,,,,,,,,,,,,,,,,,,,

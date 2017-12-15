@@ -1,0 +1,5 @@
+DB,TAP,jackhmmer,phmmer,psiblast,psiblast-non_iterative,psisemiglobal-iterative-global_pssm-targetBlockLen30,psisemiglobal-non_iterative-global_pssm-targetBlockLen30
+MultiDomainBenchmark-test,TAP-1,0.1381,0.2564,0.3081,0.2807,0.4020,0.2898
+MultiDomainBenchmark-test,TAP-3,0.1674,0.3079,0.3081,0.3292,0.4020,0.3316
+MultiDomainBenchmark-test,TAP-5,0.1800,0.3305,0.3081,0.3623,0.4020,0.3537
+MultiDomainBenchmark-test,TAP-20,0.2210,0.3912,0.3118,0.4185,0.4020,0.4162

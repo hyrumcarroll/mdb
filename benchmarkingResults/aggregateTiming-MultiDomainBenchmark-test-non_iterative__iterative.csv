@@ -1,0 +1,2 @@
+DB,jackhmmer,phmmer,psiblast,psiblast-non_iterative,psisemiglobal-iterative-global_pssm-targetBlockLen30,psisemiglobal-non_iterative-global_pssm-targetBlockLen30
+MultiDomainBenchmark-test,1055534.95,3773.23,962491.03,5234.96,3574338.94,1209133.69

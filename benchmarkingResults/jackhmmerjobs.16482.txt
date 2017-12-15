@@ -1,0 +1,93 @@
+up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+iter: 5
+hmmsearch
+Thu Dec 14 10:02:06 EST 2017
+hmmbuild
+Thu Dec 14 10:58:05 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer-5.afa
+# output HMM file:                  up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer-5 171376 18768  1625    81.04  0.590 
+
+# CPU time: 638.99u 19.62s 00:10:58.61 Elapsed: 00:10:59.10
+Thu Dec 14 11:09:04 EST 2017
+removed 'up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 11:09:05 EST 2017
+NAME  up_Q7D6E1_Q7D6E1_MYCTU.jackhmmer-5
+Thu Dec 14 11:09:05 EST 2017
+up_Q5LL22_Q5LL22_SILPO.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+iter: 5
+hmmsearch
+Thu Dec 14 11:09:06 EST 2017
+hmmbuild
+Thu Dec 14 12:37:07 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q5LL22_Q5LL22_SILPO.jackhmmer-5.afa
+# output HMM file:                  up_Q5LL22_Q5LL22_SILPO.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q5LL22_Q5LL22_SILPO.jackhmmer-5 267008 17377   892   129.42  0.590 
+
+# CPU time: 899.53u 24.27s 00:15:23.80 Elapsed: 00:15:24.53
+Thu Dec 14 12:52:32 EST 2017
+removed 'up_Q5LL22_Q5LL22_SILPO.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 12:52:32 EST 2017
+NAME  up_Q5LL22_Q5LL22_SILPO.jackhmmer-5
+Thu Dec 14 12:52:33 EST 2017
+up_Q2SW15_Q2SW15_BURTA.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+iter: 5
+hmmsearch
+Thu Dec 14 12:52:33 EST 2017
+hmmbuild
+Thu Dec 14 13:52:52 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q2SW15_Q2SW15_BURTA.jackhmmer-5.afa
+# output HMM file:                  up_Q2SW15_Q2SW15_BURTA.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q2SW15_Q2SW15_BURTA.jackhmmer-5 163575 20402  1533    78.27  0.590 
+
+# CPU time: 635.63u 16.51s 00:10:52.14 Elapsed: 00:10:52.65
+Thu Dec 14 14:03:45 EST 2017
+removed 'up_Q2SW15_Q2SW15_BURTA.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 14:03:46 EST 2017
+NAME  up_Q2SW15_Q2SW15_BURTA.jackhmmer-5
+Thu Dec 14 14:03:46 EST 2017

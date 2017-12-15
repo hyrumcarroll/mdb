@@ -1,0 +1,166 @@
+up_Q982I5_Q982I5_RHILO.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+hmmsearch
+Thu Dec 14 09:59:44 EST 2017
+hmmbuild
+Thu Dec 14 11:02:13 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q982I5_Q982I5_RHILO.jackhmmer-4.afa
+# output HMM file:                  up_Q982I5_Q982I5_RHILO.jackhmmer.iterationsDb-4.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q982I5_Q982I5_RHILO.jackhmmer-4 182577 18118  1739    73.90  0.590 
+
+# CPU time: 561.93u 15.80s 00:09:37.72 Elapsed: 00:09:37.88
+Thu Dec 14 11:11:51 EST 2017
+removed 'up_Q982I5_Q982I5_RHILO.jackhmmer-4.afa'
+
+iter: 5
+hmmsearch
+Thu Dec 14 11:11:52 EST 2017
+hmmbuild
+Thu Dec 14 12:20:40 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q982I5_Q982I5_RHILO.jackhmmer-5.afa
+# output HMM file:                  up_Q982I5_Q982I5_RHILO.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q982I5_Q982I5_RHILO.jackhmmer-5 222992 22628  1772    91.87  0.590 
+
+# CPU time: 1059.39u 28.05s 00:18:07.44 Elapsed: 00:18:07.77
+Thu Dec 14 12:38:48 EST 2017
+removed 'up_Q982I5_Q982I5_RHILO.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 12:38:49 EST 2017
+NAME  up_Q982I5_Q982I5_RHILO.jackhmmer-5
+Thu Dec 14 12:38:49 EST 2017
+up_Q31LY4_Q31LY4_SYNE7.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+hmmsearch
+Thu Dec 14 12:38:50 EST 2017
+hmmbuild
+Thu Dec 14 14:18:40 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q31LY4_Q31LY4_SYNE7.jackhmmer-4.afa
+# output HMM file:                  up_Q31LY4_Q31LY4_SYNE7.jackhmmer.iterationsDb-4.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q31LY4_Q31LY4_SYNE7.jackhmmer-4 205183 14182   563    36.89  0.590 
+
+# CPU time: 472.47u 15.03s 00:08:07.50 Elapsed: 00:08:07.63
+Thu Dec 14 14:26:48 EST 2017
+removed 'up_Q31LY4_Q31LY4_SYNE7.jackhmmer-4.afa'
+
+iter: 5
+hmmsearch
+Thu Dec 14 14:26:48 EST 2017
+hmmbuild
+Thu Dec 14 14:58:28 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q31LY4_Q31LY4_SYNE7.jackhmmer-5.afa
+# output HMM file:                  up_Q31LY4_Q31LY4_SYNE7.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q31LY4_Q31LY4_SYNE7.jackhmmer-5 194090 13001   230    10.87  0.590 
+
+# CPU time: 359.04u 12.08s 00:06:11.12 Elapsed: 00:06:11.16
+Thu Dec 14 15:04:39 EST 2017
+removed 'up_Q31LY4_Q31LY4_SYNE7.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 15:04:39 EST 2017
+NAME  up_Q31LY4_Q31LY4_SYNE7.jackhmmer-5
+Thu Dec 14 15:04:40 EST 2017
+up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+iter: 5
+hmmsearch
+Thu Dec 14 15:04:40 EST 2017
+hmmbuild
+Thu Dec 14 16:20:36 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer-5.afa
+# output HMM file:                  up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer-5 233025 18882   989   143.16  0.590 
+
+# CPU time: 803.40u 21.28s 00:13:44.68 Elapsed: 00:13:44.75
+Thu Dec 14 16:34:20 EST 2017
+removed 'up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 16:34:21 EST 2017
+NAME  up_Q89FJ3_Q89FJ3_BRAJA.jackhmmer-5
+Thu Dec 14 16:34:21 EST 2017
+up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer
+iter: 1
+iter: 2
+iter: 3
+iter: 4
+iter: 5
+hmmsearch
+Thu Dec 14 16:34:22 EST 2017
+hmmbuild
+Thu Dec 14 18:43:44 EST 2017
+# hmmbuild :: profile HMM construction from multiple sequence alignments
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# input alignment file:             up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer-5.afa
+# output HMM file:                  up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer.iterationsDb-5.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# idx name                  nseq  alen  mlen eff_nseq re/pos description
+#---- -------------------- ----- ----- ----- -------- ------ -----------
+1     up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer-5 209453 18389   333    20.82  0.590 
+
+# CPU time: 697.34u 18.74s 00:11:56.08 Elapsed: 00:11:56.13
+Thu Dec 14 18:55:40 EST 2017
+removed 'up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer-5.afa'
+
+for loop done
+Thu Dec 14 18:55:41 EST 2017
+NAME  up_Q3B0D6_Q3B0D6_SYNS9.jackhmmer-5
+Thu Dec 14 18:55:41 EST 2017
