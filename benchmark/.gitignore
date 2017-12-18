@@ -483,3 +483,4 @@ taxonomy/speclist.txt
 taxonomy/taxdump.tar.gz
 taxonomy/taxonomy.err
 rsync.sh
+relevanceInfo.tab

@@ -44,4 +44,4 @@ if [ -s "$outputFileName"  -a -e "backupFile.pl" ]; then
 fi
 
 echo "#number_residues	query_file" > "$outputFileName"
-grep -v "^#" lengths-*.tab | sort -n >> "$outputFileName"
+grep --no-filename -v "^#" lengths-*.tab | sort -n >> "$outputFileName"
