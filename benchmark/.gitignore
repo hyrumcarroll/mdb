@@ -482,3 +482,4 @@ taxonomy/nodes.dmp.gz
 taxonomy/speclist.txt
 taxonomy/taxdump.tar.gz
 taxonomy/taxonomy.err
+rsync.sh
