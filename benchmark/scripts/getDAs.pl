@@ -577,7 +577,7 @@ close( DA_INFO);
 
 
 open( RELEVANCE, ">$relevanceFilename") or die( "ERROR: Can not open / create relevanceFilename, \"$relevanceFilename\": $!");
-print RELEVANCE "#Taxon\tDA\tSuperset_DAs\n";
+print RELEVANCE "#Taxon\tDA\tRelevant_DAs\n";
 
 for( my $taxonIndex = 0; $taxonIndex <= $#taxon2da; $taxonIndex++){
     my @allDas = split( /,/, $taxon2da[$taxonIndex]);
