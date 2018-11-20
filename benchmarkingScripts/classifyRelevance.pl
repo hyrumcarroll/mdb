@@ -194,7 +194,12 @@ if( ! defined( $taxon) &&
     die( "$usage\n");
 }
 
+# hack 20180529
+if( defined($args{"psiglobal"})){
+    $args{"psisemiglobal"} = $args{"psiglobal"};
+}
 
+    
 if( defined($args{"blastp"})){
     $hitsOutputFileName = $args{"blastp"};
     $hitsOutputFileType = $BLAST_HITS_OUTPUT_TYPE;
