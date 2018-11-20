@@ -1,4 +1,4 @@
-for i in `cat lowestPercentDomains.txt`; do
+for i in `cat lowestPercentDomains-queries.txt`; do
     echo $i
     grep -A 1 ">$i" singleDomains.fa > $i.fa
     cmd="blastp -db singleDomainDB -query $i.fa -evalue 1000 -num_descriptions 10000 -num_alignments 10000 > $i.blastOut"
