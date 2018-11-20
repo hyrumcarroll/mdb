@@ -6,7 +6,7 @@ for i in `cat lowestPercentDomains-queries.txt`; do
     eval $cmd
     family=`grep "^$i" relevancy.tab | cut -f 2`
     echo "family: $family"
-    cmd="../benchmarkingScripts/classifyRelevance.pl  --taxon=$i  --family=$family  --blastp=$i.blastOut  --rel=relevancy.tab  --spougeExt=$i.spouge1000"
+    cmd="../benchmarkingScripts/classifyRelevance.pl  --taxon=$i  --family=$family  --blastp=$i.blastOut  --rel=relevancy.tab  --spougeExt --spouge=$i.spouge1000"
     echo $cmd
     eval $cmd
 done
