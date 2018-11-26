@@ -3,7 +3,7 @@ for j in `perl -p -e 's/_\d+$//' lowestPercentDomains-queries.txt | sort | uniq`
 
     numDomains=`grep $j ../benchmarkProducts/domainQueries_multi.tab.queries | cut -f 2`
     echo "numDomains: $numDomains"
-    for k in `seq 0 $j`; do
+    for k in `seq 0 (($numDomains - 1))`; do
 	echo "k: $k"
 	i="${j}_$k"
 	
