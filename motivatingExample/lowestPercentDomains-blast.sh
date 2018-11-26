@@ -12,10 +12,13 @@ for i in `cat lowestPercentDomains-queries.txt`; do
 	echo $cmd
 	eval $cmd
     fi
-    
-    family=`grep "^$i" relevancy.tab | cut -f 2`
-    echo "family: $family"
-    cmd="../benchmarkingScripts/classifyRelevance.pl  --taxon=$i  --family=$family  --blastp=$blastOutFilename  --rel=relevancy.tab  --spougeExt --spouge=$i.spouge1000  --norandomsAsIrrelevants"
-    echo $cmd
-    eval $cmd
+
+    spougeFilename="$i.spouge1000"
+    if [ ! -s "$spougeFilename" ]; then 
+	family=`grep "^$i" relevancy.tab | cut -f 2`
+	echo "family: $family"
+	cmd="../benchmarkingScripts/classifyRelevance.pl  --taxon=$i  --family=$family  --blastp=$blastOutFilename  --rel=relevancy.tab  --spougeExt --spouge=$i.spouge1000  --norandomsAsIrrelevants"
+	echo $cmd
+	eval $cmd
+    fi
 done
