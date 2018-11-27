@@ -1,0 +1,1 @@
+ --domainLocs=/panfs/pan1/iglobal/dbs/multiDomainBenchmark/domainLocs.tab  --overlap=50  --norandomsAsIrrelevants  --combineHSPs  --usefold

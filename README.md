@@ -1,2 +1,2 @@
 # MDB
-Please visit http://www.cs.mtsu.edu/~hcarroll/multiDomainBenchmark/ for more informaiton.
+Please visit http://csc.columbusstate.edu/carroll/MDB/ for more informaiton.

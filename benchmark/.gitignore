@@ -27,7 +27,6 @@ domainQueries_multi.tab.queries
 domainQueries_single.txt
 family_members-nonOverlapping-simplified.annot
 family_members-nonOverlapping.annot
-finalDatabase.classifyCriterion
 finalDatabase.fa
 finalDatabase.phr
 finalDatabase.pin
@@ -38,8 +37,6 @@ lengths-test.tab
 lengths-training.tab
 lengths.tab
 library_all_domains_MDB-taxa_speciesCodes.tab
-library_all_domains_MDB.classifyCriterion
-library_all_domains_MDB.classifyCriterion
 library_all_domains_MDB.fa
 library_all_domains_MDB.phr
 library_all_domains_MDB.pin
