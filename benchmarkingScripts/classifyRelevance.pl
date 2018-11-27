@@ -729,10 +729,20 @@ sub parseTaxaInfo{
 	while( <TAXON2SUPERFAMILY>){
 	    if( $_ =~ m/^(\S+)\s+(\S+)\s+(\S+)/){
 		# has taxon, superfamily and fold information
+		my $taxon = $1;
+		my $superfamily = $2;
+		my $fold = $3;
+		
 		#if( exists($taxon2criterionRef->{uc($1)})){
 		#    print STDERR "\ALERT: Ignoring previous fold ($taxon2criterionRef->{uc($1)}) for $1 in favor of $3!\n\n";
 		#}
-		$taxon2criterionRef->{uc($1)} .= uc($3) . ",";
+
+		# check to make sure the "superfamily" is in the "fold" list, if not, add it
+		if( index( $superfamily, $fold) == -1){
+		    if( $DEBUG){ print STDERR "Prepending superfamily $superfamily to the fold (list) $fold for $taxon\n"; }
+		    $taxon2criterionRef->{uc($taxon)} .= uc($superfamily) . ",";
+		}
+		$taxon2criterionRef->{uc($taxon)} .= uc($fold) . ",";
 	    }else{
 		chomp;
 		die( "ERROR: Mal-formed taxon2fold line: \"$_\" in $relevanceInfoFileName;");
@@ -741,11 +751,14 @@ sub parseTaxaInfo{
     }else{
 	while( <TAXON2SUPERFAMILY>){
 	    if( $_ =~ m/^(\S+)\s+(\S+)/){
+		my $taxon = $1;
+		my $superfamily = $2;
 		# has taxon and superfamily information
+		
 		#if( exists($taxon2criterionRef->{uc($1)})){
 		#    print STDERR "\nALERT: Ignoring previous superfamily ($taxon2criterionRef->{uc($1)}) for $1 in favor of $2!\n\n";
 		#}
-		$taxon2criterionRef->{uc($1)} .= uc($2) . ",";
+		$taxon2criterionRef->{uc($taxon)} .= uc($superfamily) . ",";
 	    }else{
 		chomp;
 		die( "ERROR: Mal-formed taxon2superfamily line: \"$_\" in $relevanceInfoFileName;");

@@ -582,10 +582,11 @@ print RELEVANCE "#Taxon\tDA\tRelevant_DAs\n";
 for( my $taxonIndex = 0; $taxonIndex <= $#taxon2da; $taxonIndex++){
     my @allDas = split( /,/, $taxon2da[$taxonIndex]);
     my $daId = "da" . padNumber( $allDas[0], $lengthOfHighestUniqueDAIndex + 1);
-    my $relStr = "$seqsMulti[$taxonIndex]\t$daId";
-    
+    my $relStr = "$seqsMulti[$taxonIndex]\t$daId";  # taxon and the primary (smallest/simpliest DA)
+
+    # list the superset (and the smallest/simpliest) DAs
     my %uniqueList;
-    for( my $i = 1; $i <= $#allDas; $i++){
+    for( my $i = 0; $i <= $#allDas; $i++){
 	$uniqueList{ $allDas[$i]} = 1;
     }
     my $seperator = "\t";
