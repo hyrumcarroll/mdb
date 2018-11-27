@@ -33,7 +33,7 @@ my $TEMP_DIR=".";  # Default to the current directory
 my $NCBI_TAXONOMY_FTP_URL = "ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/";
 my $NAMES_FILENAME_DEFAULT = "names.dmp";  # From NCBI Taxononmy
 my $NODES_FILENAME_DEFAULT = "nodes.dmp";  # From NCBI Taxononmy
-my $SPECIES_LIST_FILENAME_DEFAULT = "speclist.txt";  # From http://www.uniprot.org/docs/speclist.txt
+my $SPECIES_LIST_FILENAME_DEFAULT = "speclist.txt";  # From https://www.uniprot.org/docs/speclist.txt
 my $SPECIES_LIST_COL_CODE = 0;   # column index for the species code
 my $SPECIES_LIST_COL_TAXON = 2;  # column index for the taxon id
 my $ACCESSION_2_TAXON_ID_FULL_URL = "ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/idmapping";  
@@ -116,7 +116,7 @@ if( ! -s "$uniprotTuplesFilename" ){
 if( ! -s "$speciesListFilename" ){
     # try to download the file from uniprot.org
     VERBOSE( "$speciesListFilename not found, downloading the species list from uniprot.org . . .");
-    downloadFile( "http://www.uniprot.org/docs/speclist.txt", "$speciesListFilename");
+    downloadFile( "https://www.uniprot.org/docs/speclist.txt", "$speciesListFilename");
 }
 
 if( ! -s "$speciesListFilename"){
