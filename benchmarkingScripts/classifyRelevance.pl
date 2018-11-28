@@ -744,8 +744,19 @@ sub parseTaxaInfo{
 		}
 		$taxon2criterionRef->{uc($taxon)} .= uc($fold) . ",";
 	    }else{
-		chomp;
-		die( "ERROR: Mal-formed taxon2fold line: \"$_\" in $relevanceInfoFileName;");
+		if( $_ =~ m/^(\S+)\s+(\S+)/){
+		    my $taxon = $1;
+		    my $superfamily = $2;
+		    # has taxon and superfamily information
+		    
+		    #if( exists($taxon2criterionRef->{uc($1)})){
+		    #    print STDERR "\nALERT: Ignoring previous superfamily ($taxon2criterionRef->{uc($1)}) for $1 in favor of $2!\n\n";
+		    #}
+		    $taxon2criterionRef->{uc($taxon)} .= uc($superfamily) . ",";
+		}else{
+		    chomp;
+		    die( "ERROR: Mal-formed taxon2fold / superfamily line: \"$_\" in $relevanceInfoFileName;");
+		}
 	    }
 	}
     }else{
