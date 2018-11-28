@@ -200,7 +200,7 @@ classifyCriterionFilename="$fastaBaseName.classifyCriterion"
 
 if [ $USE_CACHED_FILES == 0  -o  $JUST_REMOVE_PRODUCTS == 1 ]; then 
     # remove all products
-    ALL_PRODUCTS="$relevanceInfoFilename  $multiDomainFullLabelsOutputFilename $domainSizesFilename $singleDomainFullLabelsOutputFilename   $nonOverlappingDomainLocsFilename  formatdb.log  $daSizesFilename   lengths-test.tab  lengths-training.tab  lengths.tab  $libraryFilename  longestQueriesForDAs.txt  $dasPerQueryHistogramFilename  $numDomainsHistogramFilename  queries-multiDomain/  queriesList-test.txt  queriesList-training.txt   $allQueriesFilename  $diverseQueriesFilename $diverseQueriesTrainingFilename $diverseQueriesTestFilename   $taxaRemoved  shortestQueriesForDAs.txt $domainLocsSimplifiedFilename  MultiDomainBenchmark-training  MultiDomainBenchmark-test  $fastaBaseName.{classifyCriterion,phr,pin,psq}  $classifyCriterionFilename  finalDatabase.{classifyCriterion,fa,phr,pin,psq} domainLocs.tab  $libraryTaxonAndSpeciesCodesFilename $speciesListFilename $daInfoFilename $daDiversityFilename $diverseDAsFilename $getDAsErrorFilename $getDAsOutFilename $taxonomyFilename $ncbiTaxonomyNamesCacheFile{,.gz} $ncbiTaxonomyNodesCacheFile{,.gz}  $ncbiTaxonomyBaseFilename{,.tar,.tar.gz} $taxonomyErrorsFilename"
+    ALL_PRODUCTS="$relevanceInfoFilename  $multiDomainFullLabelsOutputFilename $domainSizesFilename $singleDomainFullLabelsOutputFilename   $nonOverlappingDomainLocsFilename  formatdb.log  $daSizesFilename   lengths-test.tab  lengths-training.tab  lengths.tab  $libraryFilename  longestQueriesForDAs.txt  $dasPerQueryHistogramFilename  $numDomainsHistogramFilename  queries-multiDomain/  queriesList-test.txt  queriesList-training.txt   $allQueriesFilename  $diverseQueriesFilename $diverseQueriesTrainingFilename $diverseQueriesTestFilename   $taxaRemoved  shortestQueriesForDAs.txt $domainLocsSimplifiedFilename  MultiDomainBenchmark-training  MultiDomainBenchmark-test  $fastaBaseName.{classifyCriterion,phr,pin.psq}  $classifyCriterionFilename  finalDatabase.{classifyCriterion,fa,phr,pin,psq} domainLocs.tab  $libraryTaxonAndSpeciesCodesFilename $speciesListFilename $daInfoFilename $daDiversityFilename $diverseDAsFilename $getDAsErrorFilename $getDAsOutFilename $taxonomyFilename $ncbiTaxonomyNamesCacheFile{,.gz} $ncbiTaxonomyNodesCacheFile{,.gz}  $ncbiTaxonomyBaseFilename{,.tar,.tar.gz} $taxonomyErrorsFilename"
     # makeBenchmark.sh.out
     run "rm -fr $ALL_PRODUCTS 2> /dev/null"
     #run "rm -f $uniprotMappingsCachedFile 2> /dev/null"
@@ -213,7 +213,7 @@ fi
 
 scripts="$scriptsDir/domainLocsParser.pl  $scriptsDir/getDAs.pl  $scriptsDir/removeTaxa.pl  $scriptsDir/fileSplicer.pl"
 if [ $CALCULATE_STATISTICS -eq 1 ]; then
-    scripts="$scripts  $scriptsDir/getDASizes.pl  $scriptsDir/getDomainSizes.pl  $scriptsDir/lengths.sh"
+    scripts="$scripts  $scriptsDir/getDASizes.pl  $scriptsDir/getDomainSizes.pl  $scriptsDir/lengths.tab.sh  $scriptsDir/lengths-training.tab.sh  $scriptsDir/lengths-test.tab.sh"
 fi
 for script in $scripts; do
     if [ ! -e "$script" ]; then
@@ -490,7 +490,9 @@ done
 	
 
 if [ $CALCULATE_STATISTICS -eq 1 ]; then
-    run "$scriptsDir/lengths.sh"
+    run "$scriptsDir/lengths.tab.sh"
+    run "$scriptsDir/lengths-training.tab.sh"
+    run "$scriptsDir/lengths-test.tab.sh"
 fi
 
 echo "All done!"
